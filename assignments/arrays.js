@@ -90,7 +90,7 @@ for(i=0; i< inventory.length; i++){
    carModels.push(inventory[i].car_model);
 }
 
-console.log(carModels);
+
 console.log("---------------------------")
 
 let carModelsSorted = [carModels.sort()];
