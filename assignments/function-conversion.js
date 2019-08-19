@@ -54,7 +54,7 @@ const map1 = array1.map(x => x.key1 * 2);
 
 console.log(map1);
 
-var list = [1,2,3,4];
+
 const map2 = array1.map(function(num){
     return [num.key1 * 4,  num.key2 +2,  num.key3 - 3,  num.key4 /2];
 })
@@ -64,3 +64,26 @@ const map3 = array1.map(function(num){
     return [{key1: num.key1 * 4, key2: num.key2 +2, key3: num.key3 - 3, key4: num.key4 /2}];
 })
 console.log(map3);
+
+// ............ filter.............//
+
+let list1 = ["bob", "jane", "susan", "jannet", "elisabeth","jazy", "jacob"];
+
+const nameFilter = list1.filter( name => name.substring(0,2) == "ja" ).sort()
+
+console.log(nameFilter);
+
+
+
+// -------------------  Reduce -------------------------//
+
+//let words = ["hello", "try", "understand", "workhard", "outperform"]
+let wordCount = array1.reduce( (x,y) => {
+         
+       return x + y.key3;
+       
+},0)
+
+console.log(wordCount);
+
+
